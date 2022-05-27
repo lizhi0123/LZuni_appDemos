@@ -1,11 +1,11 @@
 <template>
 	<view class="container">
-		
+
 		<!-- <view class="intro">本项目已包含uni ui组件，无需import和注册，可直接使用。在代码区键入字母u，即可通过代码助手列出所有可用组件。光标置于组件名称处按F1，即可查看组件文档。</view>
 		<text class="intro">详见：</text>
 		<uni-link :href="href" :text="href"></uni-link> -->
 		<uni-list>
-			<uni-list-item v-for="(item,index) in news" :title="item" note="note note 111"></uni-list-item>
+			<uni-list-item v-for="(item,index) in newsList" :title="item.title" note="note note 111"></uni-list-item>
 		</uni-list>
 	</view>
 </template>
@@ -15,19 +15,29 @@
 		data() {
 			return {
 				href: 'https://uniapp.dcloud.io/component/README?id=uniui',
-				news:['news1','news2']
+				newsList: ['news1', 'news2']
 			}
 		},
 		methods: {
 
 		},
 		onLoad() {
+			uni.showLoading({
+				title: '加载中...',
+				mask: false
+			});
 			uni.request({
-				url: '',
+				url: 'http://127.0.0.1/LZPHPDemos/LZPhpDemo/API/GoodsListAPI.php',
+				// url: 'http://unidemo.dcloud.net.cn/api/news',
 				method: 'GET',
 				data: {},
-				success: res => {},
-				fail: () => {},
+				success: res => {
+					this.newsList = res.data.data;
+					uni.hideLoading();
+				},
+				fail: () => {
+					uni.hideLoading();
+				},
 				complete: () => {}
 			});
 		}

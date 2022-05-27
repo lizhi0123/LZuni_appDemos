@@ -4,18 +4,25 @@ const _sfc_main = {
   data() {
     return {
       href: "https://uniapp.dcloud.io/component/README?id=uniui",
-      news: ["news1", "news2"]
+      newsList: ["news1", "news2"]
     };
   },
   methods: {},
   onLoad() {
+    common_vendor.index.showLoading({
+      title: "\u52A0\u8F7D\u4E2D...",
+      mask: false
+    });
     common_vendor.index.request({
-      url: "",
+      url: "http://localhost/LZPHPDemos/LZPhpDemo/API/GoodsListAPI.php",
       method: "GET",
       data: {},
       success: (res) => {
+        this.newsList = res.data;
+        common_vendor.index.hideLoading();
       },
       fail: () => {
+        common_vendor.index.hideLoading();
       },
       complete: () => {
       }
@@ -34,11 +41,11 @@ if (!Math) {
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.f($data.news, (item, index, i0) => {
+    a: common_vendor.f($data.newsList, (item, index, i0) => {
       return {
         a: "71c912ab-1-" + i0 + ",71c912ab-0",
         b: common_vendor.p({
-          title: item,
+          title: item.title,
           note: "note note 111"
         })
       };
