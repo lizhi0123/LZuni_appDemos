@@ -5,7 +5,7 @@
 		<text class="intro">详见：</text>
 		<uni-link :href="href" :text="href"></uni-link> -->
 		<uni-list>
-			<uni-list-item v-for="(item,index) in newsList" :title="item.title" note="note note 111"></uni-list-item>
+			<uni-list-item v-for="(item,index) in newsList" :title="item.title" note="note note 111" @click="itemClick(item.id)" clickable="true"></uni-list-item>
 		</uni-list>
 	</view>
 </template>
@@ -14,11 +14,15 @@
 	export default {
 		data() {
 			return {
-				href: 'https://uniapp.dcloud.io/component/README?id=uniui',
-				newsList: ['news1', 'news2']
+				newsList: []
 			}
 		},
 		methods: {
+			itemClick($goodsId){
+				uni.navigateTo({
+									url: '../indexDetail/indexDetail?goodid='+$goodsId
+								});
+			},
 
 		},
 		onLoad() {

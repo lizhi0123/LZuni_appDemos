@@ -4,21 +4,25 @@ const _sfc_main = {
   data() {
     return {
       href: "https://uniapp.dcloud.io/component/README?id=uniui",
-      newsList: ["news1", "news2"]
+      newsList: []
     };
   },
-  methods: {},
+  methods: {
+    itemClick() {
+      console.log("cliced");
+    }
+  },
   onLoad() {
     common_vendor.index.showLoading({
       title: "\u52A0\u8F7D\u4E2D...",
       mask: false
     });
     common_vendor.index.request({
-      url: "http://localhost/LZPHPDemos/LZPhpDemo/API/GoodsListAPI.php",
+      url: "http://127.0.0.1/LZPHPDemos/LZPhpDemo/API/GoodsListAPI.php",
       method: "GET",
       data: {},
       success: (res) => {
-        this.newsList = res.data;
+        this.newsList = res.data.data;
         common_vendor.index.hideLoading();
       },
       fail: () => {
@@ -46,10 +50,13 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         a: "71c912ab-1-" + i0 + ",71c912ab-0",
         b: common_vendor.p({
           title: item.title,
-          note: "note note 111"
+          note: "note note 111",
+          link: true,
+          showArrow: "false"
         })
       };
-    })
+    }),
+    b: common_vendor.o(($event) => $options.itemClick())
   };
 }
 var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "/Users/RainSets/Desktop/lizhi/Code/LZuni_appDemos/LZuni_appDemo/pages/index/index.vue"]]);
