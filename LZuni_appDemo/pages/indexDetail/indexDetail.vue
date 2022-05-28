@@ -44,7 +44,8 @@
 
 <template>
 	<view class="content">
-		<text>{{goods.id}}</text>
+		<text>id = {{goods.id}},</text>
+		<text>title = {{goods.title}}</text>
 	</view>
 	
 </template>
@@ -66,7 +67,7 @@
 		},
 		onLoad:function(e) {
 			console.log(e)
-			this.goodsid = e.goodsid;
+			this.goodsid = e.id;
 			uni.showLoading({
 				title: '加载中...',
 				mask: false
