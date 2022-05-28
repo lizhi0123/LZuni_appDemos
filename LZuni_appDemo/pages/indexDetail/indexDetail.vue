@@ -44,7 +44,7 @@
 
 <template>
 	<view class="content">
-		<text></text>
+		<text>{{goods.id}}</text>
 	</view>
 	
 </template>
@@ -54,7 +54,8 @@
 		data() {
 			return {
 				href: '',
-				newsList: []
+				goods: {},
+				goodsid: ''
 			}
 		},
 		methods: {
@@ -65,7 +66,7 @@
 		},
 		onLoad:function(e) {
 			console.log(e)
-			var goodsid = e.goodsid;
+			this.goodsid = e.goodsid;
 			uni.showLoading({
 				title: '加载中...',
 				mask: false
@@ -74,9 +75,9 @@
 				url: 'http://127.0.0.1/LZPHPDemos/LZPhpDemo/API/GoodsListAPI.php',
 				// url: 'http://unidemo.dcloud.net.cn/api/news',
 				method: 'GET',
-				data: {},
+				data: {"id":this.goodsid},
 				success: res => {
-					this.newsList = res.data.data;
+					this.goods = res.data.data[0];
 					uni.hideLoading();
 				},
 				fail: () => {

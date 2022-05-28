@@ -14,13 +14,15 @@
 	export default {
 		data() {
 			return {
+				href: 'https://uniapp.dcloud.io/component/README?id=uniui',
 				newsList: []
 			}
 		},
 		methods: {
 			itemClick($goodsId){
+				console.log('123itemclick '+$goodsId);
 				uni.navigateTo({
-									url: '../indexDetail/indexDetail?goodid='+$goodsId
+									url: '../indexDetail/indexDetail?id='+$goodsId
 								});
 			},
 
