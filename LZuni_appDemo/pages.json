@@ -3,7 +3,7 @@
 		{
 		"path": "pages/index/index",
 		"style": {
-			"navigationBarTitleText": "商城"
+			
 		}
 	},
 	{
@@ -15,11 +15,42 @@
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
+		"navigationBarTitleText": "人人团",
+		"navigationBarBackgroundColor": "#18C063", //绿
+		"backgroundColor": "#18C063",//只小程序有用
 		"app-plus": {
 			"background": "#efeff4"
 		}
+	},
+	"tabBar": {
+		"color": "#8a8a8a",//深灰色
+			"selectedColor": "#18C063",
+			"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+						"iconPath": "static/tabbar/home_unselected.png",
+						"selectedIconPath": "static/tabbar/home_selected.png",
+						"text": "首页"
+			},
+			{
+				"pagePath": "pages/index/index",
+						"iconPath": "static/tabbar/order.png",
+						"selectedIconPath": "static/tabbar/ordered.png",
+						"text": "订单"
+			},
+			{
+				"pagePath": "pages/index/index",
+						"iconPath": "static/tabbar/add.png",
+						"selectedIconPath": "static/tabbar/added.png",
+						"text": "我要开团"
+			},
+			{
+				"pagePath": "pages/index/index",
+						"iconPath": "static/tabbar/my.png",
+						"selectedIconPath": "static/tabbar/myed.png",
+						"text": "个人中心"
+			}
+		]
 	}
 }

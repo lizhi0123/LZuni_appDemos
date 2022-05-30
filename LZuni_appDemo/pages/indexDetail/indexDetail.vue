@@ -45,7 +45,8 @@
 <template>
 	<view class="content">
 		<text>id = {{goods.id}},</text>
-		<text>title = {{goods.title}}</text>
+		<text>title = {{goods.title}},</text>
+		<rich-text :nodes="goods.note"></rich-text>
 	</view>
 	
 </template>
