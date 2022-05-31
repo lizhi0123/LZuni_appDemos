@@ -15,7 +15,7 @@
 					<!-- 昵称| 发布时间 -->
 					<view>
 						<!-- 昵称 -->
-						<view style="font-size: 30rpx;line-height: 1.3;">
+						<view class="font-30" style="line-height: 1.3;">
 							昵称
 						</view>
 						<text style="color: #9D9589;">2019-10-20 下午4:30分</text>
@@ -32,7 +32,7 @@
 
 
 			<!-- 标题 -->
-			<view style="font-size: 30rpx; margin: 10rpx 15rpx;">
+			<view  class="mlr-15 mt-10 mb-10 font-30">
 				<!-- border: 4rpx solid #E55936; -->
 				我是标题
 			</view>
@@ -45,22 +45,22 @@
 			<view class="flex align-center" >
 				<!-- 赞 -->
 				<view class="flex align-center jusitify-center flex-1" >
-					<text class="iconfont icon-dianzan" style="font-size: 45rpx;margin-right: 10rpx; color: red;" ></text>
+					<text class="iconfont icon-dianzan font-45" style=" font-45;margin-right: 10rpx; color: red;" ></text>
 					<text>1</text>
 				</view>
 <!-- 收藏 -->
 				<view class="flex align-center jusitify-center flex-1" style=" flex-1">
-					<text class="iconfont icon-shoucang" style="font-size: 45rpx;margin-right: 10rpx;"></text>
+					<text class="iconfont icon-shoucang font-45" style="margin-right: 10rpx;"></text>
 					<text>2</text>
 				</view>
 				<!-- 分享 -->
 				<view class="flex align-center jusitify-center" >
-					<text class="iconfont icon-fenxiang" style="font-size: 45rpx;margin-right: 10rpx;"></text>
+					<text class="iconfont icon-fenxiang font-45" style="margin-right: 10rpx;"></text>
 					<text>3</text>
 				</view>
 				<!-- 加入购物车 -->
 				<view class="flex align-center jusitify-center" style="flex: 1;">
-					<text class="iconfont icon-ic_jiarugouwuche color-mainRed" style="font-size: 45rpx;margin-right: 10rpx;"></text><!-- 红色#E55936 -->
+					<text class="iconfont icon-ic_jiarugouwuche color-mainRed font-45" style="margin-right: 10rpx;"></text><!-- 红色#E55936 -->
 					<text>4</text>
 				</view>
 

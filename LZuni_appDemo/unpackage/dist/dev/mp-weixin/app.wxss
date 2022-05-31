@@ -1764,44 +1764,60 @@ radio-group label, checkbox-group label{
   content: "\e610";
 }
 /* flex布局 */
-.flex{
+.flex {
 	display: flex;
 }
-.align-center{
+.align-center {
 	align-items: center;
 }
-.justify-between{
+.justify-between {
 	justify-content: space-between;
 }
-.jusitify-center{
+.jusitify-center {
 	justify-content: center;
 }
 /* 圆角4 */
-.rounded-4{
+.rounded-4 {
 	border-radius: 4rpx;
 }
 /* 圆 */
-.rounded-circle{
+.rounded-circle {
 	border-radius: 100%;
 }
 /* 内外边距 */
-.p-2{
+.p-2 {
 	padding: 20rpx;
 }
-.flex-1{
+.flex-1 {
 	flex: 1;
 }
+.mlr-15{
+	margin-left: 15rpx;
+	margin-right: 15rpx;
+}
+.mt-10{
+	margin-top: 10rpx;
+}
+.mb-10{
+	margin-bottom: 10rpx;
+}
+.font-30{
+	font-size: 30rpx;
+}
+.font-45 {
+	font-size: 45rpx;
+}
 /* 颜色 */
-.bgcolor-white{
+.bgcolor-white {
 	background-color: #FFFFFF;
 }
-.bgcolor-mainGreen{
+.bgcolor-mainGreen {
 	background-color: #18C063;
 }
-.color-white{
+.color-white {
 	color: #FFFFFF;
 }
-.color-mainRed{
+.color-mainRed {
 	color: #E55936;
 }
 .uni-border {
