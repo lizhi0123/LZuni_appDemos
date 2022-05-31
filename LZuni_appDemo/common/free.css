@@ -1,0 +1,46 @@
+
+/* flex布局 */
+.flex{
+	display: flex;
+}
+
+.align-center{
+	align-items: center;
+}
+
+.justify-between{
+	justify-content: space-between;
+}
+.jusitify-center{
+	justify-content: center;
+}
+
+/* 圆角4 */
+.rounded-4{
+	border-radius: 4rpx;
+}
+	/* 圆 */
+.rounded-circle{
+	border-radius: 100%;
+}
+/* 内外边距 */
+.p-2{
+	padding: 20rpx;
+}
+.flex-1{
+	flex: 1;
+}
+
+/* 颜色 */	
+.bgcolor-white{
+	background-color: #FFFFFF;
+}
+.bgcolor-mainGreen{
+	background-color: #18C063;
+}
+.color-white{
+	color: #FFFFFF;
+}
+.color-mainRed{
+	color: #E55936;
+}

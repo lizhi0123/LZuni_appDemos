@@ -4,6 +4,10 @@ exports[Symbol.toStringTag] = "Module";
 var common_vendor = require("./common/vendor.js");
 if (!Math) {
   "./pages/index/index.js";
+  "./pages/indexDetail/indexDetail.js";
+  "./pages/kaiTuan/kaiTuan.js";
+  "./pages/my/my.js";
+  "./pages/order/order.js";
 }
 const _sfc_main = {
   onLaunch: function() {

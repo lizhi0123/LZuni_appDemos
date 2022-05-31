@@ -1,0 +1,1 @@
+<view class="content"><text>id = {{a}},</text><text>title = {{b}},</text><rich-text nodes="{{c}}"></rich-text></view>

@@ -2,10 +2,72 @@
 	<view class="container">
 
 		<text class="iconfont icon-guanzhu" style="font-size: 100rpx;color: red;"></text>
-		
-		<uni-list>
-			<uni-list-item v-for="(item,index) in newsList" :title="item.title" :note="item.note" @click="itemClick(item.id)" clickable="true"></uni-list-item>
-		</uni-list>
+
+		<!-- 列表 -->
+		<view class="p-2 bgcolor-white">
+			<!-- 头像昵称|关注按钮 -->
+			<view class="flex align-center justify-between" >
+				<view class="flex align-center" >
+					<!-- 头像 -->
+					<image src="/static/tabbar/order.png" mode="" class="rounded-4"
+						style="width: 65rpx;height: 65rpx;margin-right: 20rpx;" lazy-load="">
+					</image>
+					<!-- 昵称| 发布时间 -->
+					<view>
+						<!-- 昵称 -->
+						<view style="font-size: 30rpx;line-height: 1.3;">
+							昵称
+						</view>
+						<text style="color: #9D9589;">2019-10-20 下午4:30分</text>
+					</view>
+
+
+				</view>
+				<!-- 按钮 -->
+				<view class="flex align-center jusitify-center bgcolor-mainGreen color-white"
+					style="width: 90rpx;height: 50rpx;border-radius: 5rpx;">
+					关注
+				</view>
+			</view>
+
+
+			<!-- 标题 -->
+			<view style="font-size: 30rpx; margin: 10rpx 15rpx;">
+				<!-- border: 4rpx solid #E55936; -->
+				我是标题
+			</view>
+			<!-- 图片 -->
+			<image src="/static/tabbar/home_selected.png" mode="scaleToFill"
+			class="rounded-4"
+				style="height: 350rpx;width: 100%;"></image>
+
+			<!-- 图标按钮 -->
+			<view class="flex align-center" >
+				<!-- 赞 -->
+				<view class="flex align-center jusitify-center flex-1" >
+					<text class="iconfont icon-dianzan" style="font-size: 45rpx;margin-right: 10rpx; color: red;" ></text>
+					<text>1</text>
+				</view>
+<!-- 收藏 -->
+				<view class="flex align-center jusitify-center flex-1" style=" flex-1">
+					<text class="iconfont icon-shoucang" style="font-size: 45rpx;margin-right: 10rpx;"></text>
+					<text>2</text>
+				</view>
+				<!-- 分享 -->
+				<view class="flex align-center jusitify-center" >
+					<text class="iconfont icon-fenxiang" style="font-size: 45rpx;margin-right: 10rpx;"></text>
+					<text>3</text>
+				</view>
+				<!-- 加入购物车 -->
+				<view class="flex align-center jusitify-center" style="flex: 1;">
+					<text class="iconfont icon-ic_jiarugouwuche color-mainRed" style="font-size: 45rpx;margin-right: 10rpx;"></text><!-- 红色#E55936 -->
+					<text>4</text>
+				</view>
+
+			</view>
+		</view>
+
+
 	</view>
 </template>
 
@@ -18,11 +80,11 @@
 			}
 		},
 		methods: {
-			itemClick($goodsId){
-				console.log('123itemclick '+$goodsId);
+			itemClick($goodsId) {
+				console.log('123itemclick ' + $goodsId);
 				uni.navigateTo({
-									url: '../indexDetail/indexDetail?id='+$goodsId
-								});
+					url: '../indexDetail/indexDetail?id=' + $goodsId
+				});
 			},
 
 		},
@@ -50,9 +112,15 @@
 </script>
 
 <style>
+	page {
+		background-color: #F5F5F5;
+	}
+
 	.container {
 		padding: 0px;
 		font-size: 14px;
 		line-height: 24px;
+		background-color: #F5F5F5;
+		/*浅灰 */
 	}
 </style>

@@ -1,6 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3438846 */
-    src: url('~@/static/iconfont.ttf');
+  src: url('iconfont.woff2?t=1653977108982') format('woff2'),
+       url('iconfont.woff?t=1653977108982') format('woff'),
+       url('iconfont.ttf?t=1653977108982') format('truetype');
 }
 
 .iconfont {
@@ -9,26 +11,6 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-icon:before {
-  content: "\e600";
-}
-
-.icon-icon2:before {
-  content: "\e601";
-}
-
-.icon-jiarugouwuche:before {
-  content: "\e616";
-}
-
-.icon-jiarugouwuche1:before {
-  content: "\e626";
-}
-
-.icon-ic_jiarugouwuche:before {
-  content: "\e69c";
 }
 
 .icon-gouwuchetianjia:before {
