@@ -1,0 +1,79 @@
+/* 本项目公共用样式 */
+/* 字体 */
+.font-30{
+	font-size: 30rpx;
+}
+.font-45 {
+	font-size: 45rpx;
+}
+
+.font-smaller {
+	font-size: 15rpx;
+}
+.font-small {
+	font-size: 20;
+}
+.font-sm {
+	font-size: 25rpx;
+}
+.font-normal {
+	font-size: 30rpx;
+}
+.font-md {
+	font-size: 35rpx;
+}
+.font-lg {
+	font-size: 40rpx;
+}
+
+.h1{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h2{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h3{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h4{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h5{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h6{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+
+/* 颜色 */
+.bg-color {
+	background-color: #FFFFFF;
+}
+/* 页面背景颜色 */
+.bg-color-page {
+	background-color: #f5f5f5;
+}
+
+/* 绿色 */
+.btn-color {
+	background-color: #18C063;
+}
+
+/* 红色 */
+.btn-color-2 {
+	color: #E55936;
+}
+
+.text-color {
+	color: #000000;
+}
+.text-color-note {
+	color: #9D9589;
+}
+

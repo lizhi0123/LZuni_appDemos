@@ -1777,12 +1777,27 @@ radio-group label, checkbox-group label{
 	justify-content: center;
 }
 /* 圆角4 */
-.rounded-4 {
-	border-radius: 4rpx;
+.rounded {
+	border-radius: 8rpx;
+}
+.rounded-top {
+	border-top-left-radius: 8rpx;
+	border-top-right-radius: 8rpx;
+}
+.rounded-right{
+	border-top-right-radius: 8rpx;
+	border-bottom-right-radius: 8rpx;
+}
+.rounded-bottom{
+	border-bottom-right-radius: 8rpx;
+	border-bottom-left-radius: 8rpx;
 }
 /* 圆 */
 .rounded-circle {
 	border-radius: 100%;
+}
+.rounded-0{
+	border-radius: 0;
 }
 /* 内外边距 */
 .p-2 {
@@ -1807,18 +1822,135 @@ radio-group label, checkbox-group label{
 .font-45 {
 	font-size: 45rpx;
 }
+.font-smaller {
+	font-size: 15rpx;
+}
+.font-small {
+	font-size: 20;
+}
+.font-sm {
+	font-size: 25rpx;
+}
+.font-normal {
+	font-size: 30rpx;
+}
+.font-md {
+	font-size: 35rpx;
+}
+.font-lg {
+	font-size: 40rpx;
+}
+.h1{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h2{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h3{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h4{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h5{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h6{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.my-0 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.my-10 {
+	margin-top: 10rpx;
+	margin-bottom: 10rpx;
+}
+.mx-15 {
+	margin-left: 15rpx;
+	margin-right: 15rpx;
+}
+.mx-0{
+	margin-left: 0;
+	margin-right: 0;
+}
+/* 本项目公共用样式 */
+/* 字体 */
+.font-30{
+	font-size: 30rpx;
+}
+.font-45 {
+	font-size: 45rpx;
+}
+.font-smaller {
+	font-size: 15rpx;
+}
+.font-small {
+	font-size: 20;
+}
+.font-sm {
+	font-size: 25rpx;
+}
+.font-normal {
+	font-size: 30rpx;
+}
+.font-md {
+	font-size: 35rpx;
+}
+.font-lg {
+	font-size: 40rpx;
+}
+.h1{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h2{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h3{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h4{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h5{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h6{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
 /* 颜色 */
-.bgcolor-white {
+.bg-color {
 	background-color: #FFFFFF;
 }
-.bgcolor-mainGreen {
+/* 页面背景颜色 */
+.bg-color-page {
+	background-color: #f5f5f5;
+}
+/* 绿色 */
+.btn-color {
 	background-color: #18C063;
 }
-.color-white {
-	color: #FFFFFF;
-}
-.color-mainRed {
+/* 红色 */
+.btn-color-2 {
 	color: #E55936;
+}
+.text-color {
+	color: #000000;
+}
+.text-color-note {
+	color: #9D9589;
 }
 .uni-border {
   border: 1px #F0F0F0 solid;

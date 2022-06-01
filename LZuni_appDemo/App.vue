@@ -21,6 +21,7 @@
 	/* #ifndef APP-NVUE */
 	@import '@/static/customicons.css';
 	@import "@/common/free.css";
+	@import "@/common/common.css";
 
 	// 设置整个项目的背景色
 	page {

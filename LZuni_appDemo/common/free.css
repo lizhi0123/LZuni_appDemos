@@ -16,15 +16,30 @@
 }
 
 /* 圆角4 */
-.rounded-4 {
-	border-radius: 4rpx;
+.rounded {
+	border-radius: 8rpx;
+}
+
+.rounded-top {
+	border-top-left-radius: 8rpx;
+	border-top-right-radius: 8rpx;
+}
+.rounded-right{
+	border-top-right-radius: 8rpx;
+	border-bottom-right-radius: 8rpx;
+}
+.rounded-bottom{
+	border-bottom-right-radius: 8rpx;
+	border-bottom-left-radius: 8rpx;
 }
 
 /* 圆 */
 .rounded-circle {
 	border-radius: 100%;
 }
-
+.rounded-0{
+	border-radius: 0;
+}
 /* 内外边距 */
 .p-2 {
 	padding: 20rpx;
@@ -52,19 +67,64 @@
 	font-size: 45rpx;
 }
 
-/* 颜色 */
-.bgcolor-white {
-	background-color: #FFFFFF;
+.font-smaller {
+	font-size: 15rpx;
+}
+.font-small {
+	font-size: 20;
+}
+.font-sm {
+	font-size: 25rpx;
+}
+.font-normal {
+	font-size: 30rpx;
+}
+.font-md {
+	font-size: 35rpx;
+}
+.font-lg {
+	font-size: 40rpx;
 }
 
-.bgcolor-mainGreen {
-	background-color: #18C063;
+.h1{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h2{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h3{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h4{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h5{
+	font-size: 80rpx;
+	line-height: 1.8;
+}
+.h6{
+	font-size: 80rpx;
+	line-height: 1.8;
 }
 
-.color-white {
-	color: #FFFFFF;
+.my-0 {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
-.color-mainRed {
-	color: #E55936;
+.my-10 {
+	margin-top: 10rpx;
+	margin-bottom: 10rpx;
+}
+.mx-15 {
+	margin-left: 15rpx;
+	margin-right: 15rpx;
+}
+.mx-0{
+	margin-left: 0;
+	margin-right: 0;
 }
