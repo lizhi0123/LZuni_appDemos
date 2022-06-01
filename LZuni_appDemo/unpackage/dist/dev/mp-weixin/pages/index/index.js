@@ -1,6 +1,10 @@
 "use strict";
 var common_vendor = require("../../common/vendor.js");
+const commonList = () => "../../components/common/common-list.js";
 const _sfc_main = {
+  components: {
+    commonList
+  },
   data() {
     return {
       href: "https://uniapp.dcloud.io/component/README?id=uniui",
@@ -21,7 +25,7 @@ const _sfc_main = {
       mask: false
     });
     common_vendor.index.request({
-      url: "http://127.0.0.1/LZPHPDemos/LZPhpDemo/API/GoodsListAPI.php",
+      url: "http://192.168.0.13/LZPHPDemos/LZPhpDemo/API/GoodsListAPI.php",
       method: "GET",
       data: {},
       success: (res) => {
@@ -36,10 +40,20 @@ const _sfc_main = {
     });
   }
 };
+if (!Array) {
+  const _component_common_list = common_vendor.resolveComponent("common-list");
+  _component_common_list();
+}
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
     a: common_vendor.f($data.newsList, (item, index, i0) => {
-      return {};
+      return {
+        a: "71c912ab-0-" + i0,
+        b: common_vendor.p({
+          item,
+          index
+        })
+      };
     })
   };
 }
